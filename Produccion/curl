@@ -1,0 +1,1 @@
+curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer xxxxxx' -d '{"name":"cybersyn.com","region":"nyc2","size":"512mb","image":"14440840","ssh_keys":null,"backups":false,"ipv6":true,"user_data":null,"private_networking":null}' "https://api.digitalocean.com/v2/droplets"
