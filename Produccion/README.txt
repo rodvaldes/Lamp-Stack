@@ -20,3 +20,5 @@ sudo apt-get update
 sudo apt-get install puppet-common
 sudo apt-get install git
 sudo git clone https://github.com/roxtrongo/Lamp-Stack.git
+sudo mv /etc/puppet ~
+sudo cp -rf Lamp-Stack/Produccion/puppet /etc
