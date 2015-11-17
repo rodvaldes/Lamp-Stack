@@ -1,2 +1,15 @@
 Acá los artefactos de configuración para levantar el sitio localmente 
 para desarrollo. 
+
+
+Entorno de Desarrollo
+=====================
+
+Vagrant 
+VirtualBox
+
+sudo mkdir Virtualweb
+sudo cd Virtualweb
+sudo git clone https://github.com/roxtrongo/Lamp-Stack.git
+sudo cd Desarrollo
+sudo vagrant up
