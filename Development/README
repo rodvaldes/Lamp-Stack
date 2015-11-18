@@ -13,3 +13,7 @@ sudo cd Virtualweb
 sudo git clone https://github.com/roxtrongo/Lamp-Stack.git
 sudo cd Desarrollo
 sudo vagrant up
+vagrant ssh
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get install puppet-common
