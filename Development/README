@@ -8,12 +8,19 @@ Entorno de Desarrollo
 Vagrant 
 VirtualBox
 
+
+En el host
+==========
 sudo mkdir Virtualweb
 sudo cd Virtualweb
 sudo git clone https://github.com/roxtrongo/Lamp-Stack.git
 sudo cd Desarrollo
 sudo vagrant up
 vagrant ssh
+
+En la VM
+========
+
 sudo apt-get update
 sudo apt-get install git
 sudo git clone https://github.com/roxtrongo/Lamp-Stack.git
