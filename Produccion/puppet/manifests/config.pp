@@ -7,3 +7,11 @@ user { "cyberuser":
    managehome => 'true',
    shell => '/bin/bash',
 }
+
+package { "git":
+    ensure => "latest"
+}
+
+package { "vim":
+    ensure => "latest"
+}
