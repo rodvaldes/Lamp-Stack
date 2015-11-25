@@ -14,7 +14,6 @@ user { "cyberuser":
    managehome => 'true',
    shell => '/bin/bash',
 }
-<<<<<<< HEAD
 
 package { "git":
     ensure => "latest"
@@ -22,6 +21,4 @@ package { "git":
 
 package { "vim":
     ensure => "latest"
-}
-=======
->>>>>>> origin/master
+} 
