@@ -1,15 +1,16 @@
+## Vargant Ubuntu ##·
+
 Acá los artefactos de configuración para levantar el sitio localmente 
 para desarrollo. 
 
 
-Entorno de Desarrollo
-=====================
+###Entorno de Desarrollo###
 
-Vagrant 
-VirtualBox
+* Vagrant 
+* VirtualBox
 
 
-En el host
+###En el host###
 ==========
 sudo mkdir Virtualweb
 sudo cd Virtualweb
@@ -31,6 +32,30 @@ config.ssh.forward_agent = true
  ssh-keyscan -H github.com >> ~/.ssh/known_hosts 
 
 Esto es para poder hacer el clone desde un repositorio privado.
+
+Ejemplo de Vagrantfile
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|  
+  config.vm.box = "boxcutter/ubuntu1404"
+  config.ssh.forward_agent = true
+
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    sudo apt-get install -y git
+    mkdir -p ~/.ssh
+    chmod 700 ~/.ssh
+    ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+    ssh -T git@github.com
+    git clone git@github.com:you/your-private-repo
+  SHELL
+end  
+
+
+
+
 
 En la VM
 ========
