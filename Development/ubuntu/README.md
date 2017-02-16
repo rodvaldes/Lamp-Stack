@@ -34,7 +34,7 @@ config.ssh.forward_agent = true
 Esto es para poder hacer el clone desde un repositorio privado.
 
 Ejemplo de Vagrantfile
-
+```ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -52,7 +52,7 @@ Vagrant.configure(2) do |config|
     git clone git@github.com:you/your-private-repo
   SHELL
 end  
-
+```
 
 
 
