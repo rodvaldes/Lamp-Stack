@@ -1,4 +1,4 @@
-## Vargant Ubuntu ##·
+## Vargant Ubuntu ##
 
 Acá los artefactos de configuración para levantar el sitio localmente 
 para desarrollo. 
