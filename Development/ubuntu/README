@@ -18,6 +18,20 @@ sudo cd Desarrollo
 sudo vagrant up
 vagrant ssh
 
+Provisioning
+===========
+https://stefanscherer.github.io/access-private-github-repos-in-vagrant-up/
+
+1-. SSH Agent Forwarding: Agregar en el Vagrantfile:
+
+config.ssh.forward_agent = true
+
+2.- Agregar la llave a la máquina en momento de provisioning vía SHELL script.
+
+ ssh-keyscan -H github.com >> ~/.ssh/known_hosts 
+
+Esto es para poder hacer el clone desde un repositorio privado.
+
 En la VM
 ========
 
